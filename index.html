@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+
+
+
+        <header>
+
+            <img id="logo" src="./assets/images/logo.png" alt="">
+
+            <ul>
+                <li><a class="navA" href="#home">Всички рецепти</a></li>
+                <li><a class="navA" href="#favorites">Любими рецепти</a></li>
+                <li><a class="navA" href="#create-recepie">Създай рецепта</a></li>
+                <li><a class="navA" href="#profile">Моят профил</a></li>
+            </ul>
+
+            <img id="profilePic" src="./assets/images/guest.png" alt="">
+
+        </header>
+
+        <main>
+
+            <div id="searchDiv">
+                <label for="searchEl">Filter by name</label>
+                <input type="text" name="" id="searchEl">
+
+                <label for="selectEl">Filter by ingredient</label>
+                <select name="" id="selectEl">
+                    <option value="">All</option>
+                </select>
+            </div>
+
+
+            <div id="homePage">
+
+                <div id="homeRecepiesContainer" class="recepiesContainer">
+
+                    <!-- <div class="card">
+
+                        <img class="cardImg"
+                            src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F24056.jpg"
+                            alt="">
+
+                        <h2 class="cardH2">Cinnamon Rolls II</h2>
+
+                        <p class="cardP">
+                            butter, butter, butter, cinammon, powdered sugar, eggs, flour, milk
+                        </p>
+
+                        <div class="cardBtnsDiv">
+                            <button class="likeBtn">Добави в любими</button>
+                            <button class="cookBtn">Сготви</button>
+                        </div>
+
+                    </div> -->
+
+
+
+                </div>
+
+            </div>
+
+            <div id="favoritesPage">
+
+                <div id="favoritesRecepiesContainer" class="recepiesContainer">
+
+                </div>
+
+            </div>
+
+
+
+            <div id="createRecepiePage">
+
+                <form action="#" id="createRecForm">
+
+                    <label for="recTitleInput">Name</label>
+                    <input required type="text" id="recTitleInput" name="title" class="createRecInput">
+
+                    <label for="recHref">Link to similar recepie</label>
+                    <input required type="text" id="recHref" name="href" class="createRecInput">
+
+                    <label for="" id="recIngredients">Ingredients:</label>
+                    <input required type="text" id="recIngredients" name="ingredients" class="createRecInput">
+
+                    <label for="recThumbnail">Image url:</label>
+                    <input required type="text" id="recThumbnail" name="thumbnail" class="createRecInput">
+
+                    <button type="submit" id="createRecBtn" disabled>Create recepie</button>
+
+                </form>
+
+                <!--  {
+                        "title": "Potato and Cheese Frittata",
+                        "href": "http://allrecipes.com/Recipe/Potato-and-Cheese-Frittata/Detail.aspx",
+                        "ingredients": "cheddar cheese, eggs, olive oil, onions, potato, salt",
+                        "thumbnail": "http://img.recipepuppy.com/2.jpg"
+                }, -->
+
+            </div>
+
+
+            <div id="profilePage">
+
+
+                <form action="#" id="editProfileForm">
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" class="inputProfile" required>
+
+                    <label for="age">Age:</label>
+                    <input type="text" id="age" name="age" class="inputProfile" required>
+
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" class="inputProfile" required>
+
+                    <label for="imgUrl">Image url:</label>
+                    <input type="text" id="imgUrl" name="imgUrl" class="inputProfile" required>
+
+                    <!-- <input type="file" name="profile-pic-upload" id="profile-upload"> -->
+
+
+                    <button type="submit" id="submitBtnProfile" disabled>Change info</button>
+
+                </form>
+
+                <table id="cookedRecepiesTable">
+
+                </table>
+
+            </div>
+
+
+            <div id="errorPage">
+
+                <div>Error 404!</div>
+
+            </div>
+
+        </main>
+
+        <footer>
+            <p>Website created by Krasimir Stoev</p>
+            <p>All rights reserved &copy; 2022</p>
+        </footer>
+
+    </div>
+
+    <script src="./assets/js/recepies.js"></script>
+
+    <script src="./assets/js/User.js"></script>
+
+    <script src="./assets/js/Recepie.js"></script>
+
+    <script src="./assets/js/RecepieManager.js"></script>
+
+
+    <script src=" ./assets/js/index.js"></script>
+</body>
+
+</html>
